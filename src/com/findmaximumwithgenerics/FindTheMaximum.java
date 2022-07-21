@@ -2,7 +2,7 @@ package com.findmaximumwithgenerics;
 
 public class FindTheMaximum< T extends Comparable<T>> {
 	
-	public  T maxNumber(T num1,T num2, T num3) {
+	public  T max(T num1,T num2, T num3) {
 		 T max = num1;
 		 if ((num2.compareTo(max))>0) {
 			 max = num2; 

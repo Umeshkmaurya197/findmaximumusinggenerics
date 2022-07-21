@@ -6,10 +6,13 @@ public class FindMaximumDemo {
 		
 		FindTheMaximum<Integer> findMaximumNumberInteger = new FindTheMaximum<Integer>();
 		
-		findMaximumNumberInteger.maxNumber(345, 6734, 3456);
+		findMaximumNumberInteger.max(345, 6734, 3456);
 		
 		FindTheMaximum<Float> findMaximumNumberFloat = new FindTheMaximum<Float>();
-		findMaximumNumberFloat.maxNumber(23.3f,44.2f, 55.3f);
+		findMaximumNumberFloat.max(23.3f,44.2f, 55.3f);
+		
+		FindTheMaximum<String> findTheMaximumString = new FindTheMaximum<String>();
+		findTheMaximumString.max("Apple", "Peach", "Banana");
 	}
 
 }
