@@ -6,18 +6,35 @@ import org.junit.jupiter.api.Test;
 
 class FindTheMaximunTest {
 
-	FindTheMaximum<Integer> findTheMaximum = new FindTheMaximum<Integer>();
+	FindTheMaximum<Integer> findTheMaximumInteger = new FindTheMaximum<Integer>();
+	
+	FindTheMaximum<Float> findTheMaximumFloat =new FindTheMaximum<Float>();
+	
 	@Test
-	void testMaxNumberAtFirst() {
-		assertEquals(34, findTheMaximum.maxNumber(34, 13, 6));
+	void testMaxNumberIntegerAtFirst() {
+		assertEquals(34, findTheMaximumInteger.maxNumber(34, 13, 6));
 	}
 	@Test
-	void testMaxNumberAtSecond() {
-		assertEquals(153, findTheMaximum.maxNumber(34, 153, 6));
+	void testMaxNumberIntegerAtSecond() {
+		assertEquals(153, findTheMaximumInteger.maxNumber(34, 153, 6));
 	}
 	@Test
-	void testMaxNumberAtThird() {
-		assertEquals(600, findTheMaximum.maxNumber(34, 153, 600));
+	void testMaxNumberIntegerAtThird() {
+		assertEquals(600, findTheMaximumInteger.maxNumber(34, 153, 600));
+	}
+	
+	
+	@Test
+	void testMaxNumberFloatAtFirst() {
+		assertEquals(34.3f, findTheMaximumFloat.maxNumber(34.3f, 13.3f, 6.1f));
+	}
+	@Test
+	void testMaxNumberFloatAtSecond() {
+		assertEquals(133.3f, findTheMaximumFloat.maxNumber(34.3f, 133.3f, 6.1f));
+	}
+	@Test
+	void testMaxNumberFloatAtThird() {
+		assertEquals(600.1f, findTheMaximumFloat.maxNumber(34.3f, 133.3f, 600.1f));	
 	}
 	
 

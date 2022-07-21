@@ -2,12 +2,14 @@ package com.findmaximumwithgenerics;
 
 public class FindMaximumDemo {
 	
-	public static void main (String []args) {
+	public static void main (String [] args) {
 		
-		FindTheMaximum<Integer> findMaximumNumber = new FindTheMaximum<Integer>();
+		FindTheMaximum<Integer> findMaximumNumberInteger = new FindTheMaximum<Integer>();
 		
-		findMaximumNumber.maxNumber(345, 6734, 3456);
+		findMaximumNumberInteger.maxNumber(345, 6734, 3456);
 		
+		FindTheMaximum<Float> findMaximumNumberFloat = new FindTheMaximum<Float>();
+		findMaximumNumberFloat.maxNumber(23.3f,44.2f, 55.3f);
 	}
 
 }

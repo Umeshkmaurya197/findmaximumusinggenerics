@@ -10,7 +10,7 @@ public class FindTheMaximum< T extends Comparable<T>> {
 		 if((num3.compareTo(max))>0){
 			 max = num3 ;
 		 }
-		 System.out.println("Maximun Number is : "+max);
+		 System.out.println("Maximun Number is  : "+max);
 		return max;
 	}
 	
